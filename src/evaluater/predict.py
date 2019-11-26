@@ -54,11 +54,12 @@ def main(base_model_name, weights_file, image_source, predictions_file, img_form
     for i, sample in enumerate(samples):
         sample['mean_score_prediction'] = calc_mean_score(predictions[i])
 
-    print(json.dumps(samples, indent=2))
+    # print(json.dumps(samples, indent=2))
+    #
+    # if predictions_file is not None:
+    #     save_json(samples, predictions_file)
 
-    if predictions_file is not None:
-        save_json(samples, predictions_file)
-
+    return samples
 
 if __name__ == '__main__':
 
