@@ -3,9 +3,9 @@ import os
 import glob
 import json
 import argparse
-from utils.utils import calc_mean_score, save_json
-from handlers.model_builder import Nima
-from handlers.data_generator import TestDataGenerator
+from image_quality_assessment.src.utils.utils import calc_mean_score, save_json
+from image_quality_assessment.src.handlers.model_builder import Nima
+from image_quality_assessment.src.handlers.data_generator import TestDataGenerator
 
 
 def image_file_to_json(img_path):
